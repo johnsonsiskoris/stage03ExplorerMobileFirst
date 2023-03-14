@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    /*10 px*/
+}
+
+body {
+    background: #E5E5E5;
+    font-size: 1.6rem;
+
+
+}
+
+.page {
+    max-width: 38rem;
+    margin: 0 auto;
+
+}
+
+header {
+    background: #8E9AAF;
+
+    width: 38.4rem;
+    height: 27.9rem;
+}
+
+header .logo {
+    position: absolute;
+
+    margin-left: 12.4rem;
+    margin-top: 3.2rem;
+}
+
+header h1 {
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 5px;
+    font-weight: 400;
+
+    font-size: 4.0rem;
+    line-height: 3.4rem;
+
+    background: #CBC0D3;
+    color: white;
+
+    position: absolute;
+
+    width: 38.4rem;
+    height: 4.9rem;
+
+    margin-top: 20rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background: #EFF1FF;
+    width: 38.4rem;
+
+    padding: 1.4rem 3.2rem;
+    margin-bottom: 6.0rem;
+
+    animation: downtop 700ms reverse;
+
+}
+
+p {
+    font-family: 'Palanquin' sans-serif;
+    font-weight: 400;
+    font-size: 2.0rem;
+    line-height: 1.5rem;
+    color: #23053A;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    margin-bottom: 6.3rem;
+}
+
+main .card {
+    margin-bottom: 3.2rem;
+    position: relative;
+}
+
+main h2 {
+    position: absolute;
+    right: 1.6rem;
+    top: 1.6rem;
+}
+
+main h2 {
+    font-family: 'Staatliches', cursive;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 3.4rem;
+
+    color: #4A4E69;
+    background: #FEEAFA;
+    border-radius: 2rem;
+
+    letter-spacing: 5%;
+
+    padding: 0 1.6rem;
+    width: 11.2rem;
+    height: 3.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation: topdown 700ms reverse backwards;
+
+}
+
+@keyframes topdown {
+
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes downtop {
+    100% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
